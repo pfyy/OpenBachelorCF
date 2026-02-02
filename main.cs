@@ -8,6 +8,7 @@ class Handlers
     {
         if (!oSession.hostname.EndsWith("hypergryph.com"))
         {
+            oSession.Ignore();
             return;
         }
 
