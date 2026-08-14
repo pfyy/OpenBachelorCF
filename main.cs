@@ -6,7 +6,7 @@ class Handlers
 
     static function OnBeforeRequest(oSession: Session)
     {
-        if (!oSession.hostname.EndsWith("hypergryph.com"))
+        if (!oSession.hostname.EndsWith("hypergryph.com") && !oSession.hostname.EndsWith("yostarplat.com"))
         {
             oSession.Ignore();
             return;
